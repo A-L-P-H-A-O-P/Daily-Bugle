@@ -44,4 +44,8 @@ We get to the passwaord of user jjameson in configuration.php in /var/www/html d
 <img width="966" alt="18" src="https://user-images.githubusercontent.com/96518581/149486258-79476609-9182-4ba9-95c5-c07c9c594559.png">
 <img width="736" alt="19" src="https://user-images.githubusercontent.com/96518581/149486346-dbd474dd-d9c6-4808-a48e-5ed10842e8e6.png">
 
+By running sudo -l we get to know that we can run yum then we use GTFObins(https://gtfobins.github.io/gtfobins/yum/) to escalate our privledged.
+<img width="960" alt="20" src="https://user-images.githubusercontent.com/96518581/149508107-e0cf92f1-48d9-49a0-b522-bbac1f67557e.png">
+<img width="966" alt="21" src="https://user-images.githubusercontent.com/96518581/149508140-5d73688a-621b-4e42-9771-de1103044a53.png">
 
+HIT THE BULLSEYE!!!
