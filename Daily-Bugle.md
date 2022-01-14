@@ -11,3 +11,32 @@ for directories brute-forcing there is one of the best tool is ffuf.
 By the help of nmap result above we get to know about joomla so let's find out version of it.
 <img width="698" alt="1" src="https://user-images.githubusercontent.com/96518581/149464410-fa13e39b-8a02-4b5f-8598-ecf72684b433.png">
 
+Using nmap we get to know about port 80 is running http service then by browsing we get this page :-
+<img width="830" alt="4" src="https://user-images.githubusercontent.com/96518581/149466138-e1d33577-94d4-48bb-a03f-d3482de88e9e.png">
+
+Going to /administrator page we get login panel of joomla cms
+<img width="827" alt="5" src="https://user-images.githubusercontent.com/96518581/149468169-c5017824-d2e1-4952-8a0c-e348ea4b1115.png">
+
+Searching for joomla exploit in github I get with amazing script called joomblah.py which gives us the username and hash password, link of github script https://github.com/terandev/Joomblah
+<img width="623" alt="6" src="https://user-images.githubusercontent.com/96518581/149469687-6c690495-2f0a-4116-84a1-86fb762dc94f.png">
+<img width="261" alt="7" src="https://user-images.githubusercontent.com/96518581/149469852-f9e04502-0ed8-408c-b215-0ee6be2618a4.png">
+<img width="960" alt="8" src="https://user-images.githubusercontent.com/96518581/149470235-f6af6c75-7489-491b-83bf-65da48aa922d.png">
+
+another method to get credentials is
+<img width="960" alt="9" src="https://user-images.githubusercontent.com/96518581/149470902-3279883a-43ed-49d3-ace5-e0825b306237.png">
+
+Now its time to crack the hash, for this we use one of the best tool JohnTheRipper and paste the hash into the file hash.txt
+<img width="909" alt="10" src="https://user-images.githubusercontent.com/96518581/149471814-e113f67a-277b-4430-99b6-7fd18ebe4f13.png">
+
+We get the {username:password} let's get back to /administrator page and try to login into joomla login page, try to find any upload page I found the Joomla reverse shell article https://www.hackingarticles.in/joomla-reverse-shell/ this will explains how to gain reverse shell
+<img width="960" alt="11" src="https://user-images.githubusercontent.com/96518581/149475373-3856b02d-424b-44b9-9b70-69ad02fb6971.png">
+<img width="960" alt="12" src="https://user-images.githubusercontent.com/96518581/149475421-9793e645-b453-4acc-8646-9545be6aba80.png">
+<img width="960" alt="13" src="https://user-images.githubusercontent.com/96518581/149475498-e0934dfc-3a74-43de-9492-f1a2c82ca67c.png">
+<img width="959" alt="14" src="https://user-images.githubusercontent.com/96518581/149475573-c9dd0180-78a8-45c3-b8b6-261f7dc279a5.png">
+
+We copy paste the reverse php shell from this github link https://github.com/pentestmonkey/php-reverse-shell and change the ip_address to attacker_ip_address and saving it, by browsing the shell and start netcat tool listening mode we get the machine shell
+<img width="960" alt="16" src="https://user-images.githubusercontent.com/96518581/149478501-93b76bbd-59a8-4948-aacd-50422c65f26a.png">
+<img width="819" alt="15" src="https://user-images.githubusercontent.com/96518581/149478816-d356b05b-b2ca-4bde-be64-2b438370546e.png">
+<img width="839" alt="17" src="https://user-images.githubusercontent.com/96518581/149480108-69190631-a015-4849-971d-81405318a2be.png">
+
+
