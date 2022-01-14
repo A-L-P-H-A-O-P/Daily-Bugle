@@ -18,6 +18,7 @@ Going to /administrator page we get login panel of joomla cms
 <img width="827" alt="5" src="https://user-images.githubusercontent.com/96518581/149468169-c5017824-d2e1-4952-8a0c-e348ea4b1115.png">
 
 Searching for joomla exploit in github I get with amazing script called joomblah.py which gives us the username and hash password, link of github script https://github.com/terandev/Joomblah
+
 <img width="623" alt="6" src="https://user-images.githubusercontent.com/96518581/149469687-6c690495-2f0a-4116-84a1-86fb762dc94f.png">
 <img width="261" alt="7" src="https://user-images.githubusercontent.com/96518581/149469852-f9e04502-0ed8-408c-b215-0ee6be2618a4.png">
 <img width="960" alt="8" src="https://user-images.githubusercontent.com/96518581/149470235-f6af6c75-7489-491b-83bf-65da48aa922d.png">
@@ -38,5 +39,9 @@ We copy paste the reverse php shell from this github link https://github.com/pen
 <img width="960" alt="16" src="https://user-images.githubusercontent.com/96518581/149478501-93b76bbd-59a8-4948-aacd-50422c65f26a.png">
 <img width="819" alt="15" src="https://user-images.githubusercontent.com/96518581/149478816-d356b05b-b2ca-4bde-be64-2b438370546e.png">
 <img width="839" alt="17" src="https://user-images.githubusercontent.com/96518581/149480108-69190631-a015-4849-971d-81405318a2be.png">
+
+We get to the passwaord of user jjameson in configuration.php in /var/www/html directory then we use su(substitute user) and user.txt in the home directory of the user.
+<img width="966" alt="18" src="https://user-images.githubusercontent.com/96518581/149486258-79476609-9182-4ba9-95c5-c07c9c594559.png">
+<img width="736" alt="19" src="https://user-images.githubusercontent.com/96518581/149486346-dbd474dd-d9c6-4808-a48e-5ed10842e8e6.png">
 
 
