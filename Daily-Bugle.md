@@ -1,4 +1,6 @@
-# Daily-Bugle
+# Daily-Bugle --tryhackme
+
+(https://tryhackme.com)
 
 (https://tryhackme.com/room/dailybugle)
 
